@@ -23,7 +23,7 @@ namespace WPF_FormatWorker
         public Window1()
         {
             InitializeComponent();
-
+            
             // Создаем область построения ChartArea
             chart.ChartAreas.Add(new ChartArea("defaultArea"));
             // Добавляем ряд данных "defaultArea"
@@ -31,8 +31,8 @@ namespace WPF_FormatWorker
             chart.Series["Series1"].ChartArea = "defaultArea";
             chart.Series["Series1"].ChartType = SeriesChartType.Pie;
             // добавляем данные
-            int[] axisXData = new int[] { 1, 2, 3, 4, 5 };
-            int[] axisYData = new int[] { 56, 34, 15, 11, 5 };
+            int[] axisXData = new int[5];
+            int[] axisYData = new int[] { 56, 34, 15, 11, 5};
             chart.Series["Series1"].Points.DataBindXY(axisXData, axisYData);
 
 

@@ -20,6 +20,7 @@ namespace WPF_FormatWorker
             InitializeComponent();
             //симуляция нажатия кнопки - на время отладки
             Button_Click_LoadCSV(but1, null);
+            Button_Click_CountryDiag(but2, null);
         }
 
         //кнопка ОТКРЫТЬ CSV
@@ -37,7 +38,7 @@ namespace WPF_FormatWorker
             //ЗАКРЫТО НА ОТЛАДКУ if (f.ShowDialog() == System.Windows.Forms.DialogResult.OK) file = f.FileName;
             
             //выгрузка данных на форму
-            file = @"C:\Users\VS\Downloads\TOP500_202011.csv"; //убрать на релизе!
+            file = @"TOP500_202011.csv"; //убрать на релизе!
             if (file != "")
             {
             using (GenericParserAdapter parser = new GenericParserAdapter(file))
