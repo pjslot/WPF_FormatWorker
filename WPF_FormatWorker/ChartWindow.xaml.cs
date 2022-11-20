@@ -26,18 +26,27 @@ namespace WPF_FormatWorker
             
             // Создаем область построения ChartArea
             chart.ChartAreas.Add(new ChartArea("defaultArea"));
+         
             // Добавляем ряд данных "defaultArea"
             chart.Series.Add(new Series("Series1"));
             chart.Series["Series1"].ChartArea = "defaultArea";
             chart.Series["Series1"].ChartType = SeriesChartType.Pie;
+          
             // добавляем данные
-            int[] axisXData = new int[5];
-            int[] axisYData = new int[] { 56, 34, 15, 11, 5};
+            string[] axisXData = new string[] { $"Количество ядер {MainWindow.cores}", $"Общая производительность {MainWindow.power}" };
+            int[] axisYData = new int[] { MainWindow.cores, MainWindow.power};           
             chart.Series["Series1"].Points.DataBindXY(axisXData, axisYData);
 
+            //заголовок диаграммы
+            chart.Titles.Add($"Отношение количества ядер суперкомпьютера {MainWindow.compName} к его общей производительности.");
 
+            //создание легенды
+            chart.Legends.Add(new Legend("Legend2"));
+
+            //подвязка легенды
+            chart.Series["Series1"].Legend = "Legend2";
+            chart.Series["Series1"].IsVisibleInLegend = true;
         }
-
 
     }
 }
