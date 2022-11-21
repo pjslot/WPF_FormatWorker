@@ -10,22 +10,27 @@ xmlns:wfcharting="clr-namespace:System.Windows.Forms.DataVisualization.Charting;
 
         
         
- Title="WPF_FormatWorker v1.0 - KabluchkovDS" Height="450" Width="800">
+ Title="WPF_FormatWorker v1.0 - KabluchkovDS" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="47*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <Button x:Name="but1" Height="40" Margin="10" Click="Button_Click_LoadCSV">Загрузить из CSV</Button>
-            <Button x:Name="but2" Height="40" Margin="10" Click="Button_Click_CountryDiag">Диаграмма по компьютеру</Button>
-            <Button Height="40" Margin="10">Сохранить в XML</Button>
-            <Button Height="40" Margin="10">Сохранить в Json</Button>
-            <Button Height="40" Margin="10">Экспорт в Excel</Button>
-            <Button Height="40" Margin="10">Отчёт в Word</Button>
+            <Button x:Name="but1" Height="40" Margin="10,10,10,5" Click="Button_Click_LoadCSV">Загрузить из CSV</Button>
+            <Button x:Name="but2" Height="40" Margin="10,10,10,5" Click="Button_Click_CountryDiag">Диаграмма по компьютеру</Button>
+            <Button Height="40" Margin="10,10,10,5" Click="Button_Click">Сохранить в XML</Button>
+            <Button Height="40" Margin="10,10,10,5">Сохранить в Json</Button>
+            <Button Height="40" Margin="10,10,10,5">Экспорт в Excel</Button>
+            <Button Height="40" Margin="10,10,10,5">Отчёт в Word</Button>
+            <TextBlock TextWrapping="Wrap" Height="23" HorizontalAlignment="Center"><Run Language="ru-ru" Text="Количество строк для экспорта:"/></TextBlock>
+            <Slider x:Name="slider" Width="176" Background="#FF9AAEFF" Maximum="500" Minimum="1" SmallChange="1" Value="500" ValueChanged="slider_ValueChanged" Height="30" TickPlacement="Both" InputScope="Number"/>
+            <TextBlock x:Name="sliderText"   TextWrapping="Wrap" Text="{Binding ElementName=but1, Path=Uid}" Width="174" FontSize="20" Height="24" TextAlignment="Center" Margin="10,10,10,10" HorizontalAlignment="Center" Background="#FFE6FFEE" />
+            <Button Content="&lt;--  Откат таблицы  &lt;--" Height="26" Width="175" Margin="10,0,10,0" HorizontalAlignment="Center"/>
         </StackPanel>
-        <DataGrid Grid.Column="1" x:Name="dataGrid" SelectionChanged="dataGrid_SelectionChanged">
-           
+        <DataGrid Grid.Column="1" x:Name="dataGrid" SelectionChanged="dataGrid_SelectionChanged" Grid.ColumnSpan="2">
+
         </DataGrid>
     </Grid>
 </Window>

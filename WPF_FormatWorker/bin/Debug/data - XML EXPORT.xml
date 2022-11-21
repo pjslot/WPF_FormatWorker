@@ -1,0 +1,42 @@
+<DocumentElement>
+  <Supercomputers_x0020_Top500>
+    <Rank>1</Rank>
+    <Previous_x0020_Rank>1</Previous_x0020_Rank>
+    <First_x0020_Appearance>55</First_x0020_Appearance>
+    <First_x0020_Rank>1</First_x0020_Rank>
+    <Name>Supercomputer Fugaku</Name>
+    <Computer>Supercomputer Fugaku, A64FX 48C 2.2GHz, Tofu interconnect D</Computer>
+    <Site>RIKEN Center for Computational Science</Site>
+    <Manufacturer>Fujitsu</Manufacturer>
+    <Country>Japan</Country>
+    <Year>2020</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>7 630 848</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>442 010.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>537 212.00</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>21 288 960</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>16 004.50</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>29 899.23</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>14.78</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>MPP</Architecture>
+    <Processor>A64FX 48C 2.2GHz</Processor>
+    <Processor_x0020_Technology>Fujitsu ARM</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 200</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Red Hat Enterprise Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>48</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Fujitsu A64FX</Processor_x0020_Generation>
+    <System_x0020_Model>Supercomputer Fugaku</System_x0020_Model>
+    <System_x0020_Family>Fujitsu Cluster</System_x0020_Family>
+    <Interconnect_x0020_Family>Proprietary Network</Interconnect_x0020_Family>
+    <Interconnect>Tofu interconnect D</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>50 831</Site_x0020_ID>
+    <System_x0020_ID>179807</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+</DocumentElement>
