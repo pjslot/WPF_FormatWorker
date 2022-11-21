@@ -8,11 +8,13 @@
 xmlns:wfcharting="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
         mc:Ignorable="d"
         Title="Diagram" Height="450" Width="800">
-    <Grid>
-        <WindowsFormsHost>
+    <Grid Background="#FFC9FFA5">
+        <WindowsFormsHost Margin="0,33,0,0">
             <wfcharting:Chart x:Name="chart">
             </wfcharting:Chart>
         </WindowsFormsHost>
+        <ComboBox  x:Name="combo" Margin="200,4,0,0" VerticalAlignment="Top" Width="98" SelectionChanged="combo_SelectionChanged" HorizontalAlignment="Left" SelectedIndex="0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="ru-ru" Text="Выберите тип диаграммы:"/></TextBlock>
 
     </Grid>
 </Window>

@@ -46,7 +46,17 @@ namespace WPF_FormatWorker
             //подвязка легенды
             chart.Series["Series1"].Legend = "Legend2";
             chart.Series["Series1"].IsVisibleInLegend = true;
+
+            //наполняем комбо бокс диграммами
+            combo.Items.Add(SeriesChartType.Pie);          
+            combo.Items.Add(SeriesChartType.Doughnut);
+            combo.Items.Add(SeriesChartType.Funnel);
         }
 
+        private void combo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //меняем диагрмму после выбора в комбобоксе
+            chart.Series["Series1"].ChartType = (SeriesChartType)combo.SelectedValue;
+        }
     }
 }

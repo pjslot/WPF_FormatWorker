@@ -11,7 +11,6 @@ using System.Windows.Forms.DataVisualization.Charting;
 namespace WPF_FormatWorker
 {
 
-
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
@@ -24,11 +23,9 @@ namespace WPF_FormatWorker
         public MainWindow()
         {
             InitializeComponent();
-            //подсвечиваем первую строку для подстраховки
-            //dataGrid.Focus();
             //симуляция нажатия кнопки - на время отладки
             Button_Click_LoadCSV(but1, null);
-            // Button_Click_CountryDiag(but2, null);
+            //Button_Click_CountryDiag(but2, null);
 
             cores = 0;
             power = 0;
@@ -63,21 +60,9 @@ namespace WPF_FormatWorker
                 DataTable dtComputers = parser.GetDataTable();
                 // выгрузка объекта таблицы в датагрид
                 dataGrid.ItemsSource = dtComputers.DefaultView;
-
-
-
-                }
-
-               
+                }            
             }
-
-
-            
-
-
         }
-
-        
 
         //ОБРАБОТКА ВЫДЕЛЕННОЙ СТРОКИ
     
@@ -101,14 +86,22 @@ namespace WPF_FormatWorker
             compName = row["Name"].ToString();
         }
 
-
-
         //КНОПКА ОТРИСОВКИ ДИАГРАММЫ
         private void Button_Click_CountryDiag(object sender, RoutedEventArgs e)
         {
-
-            Window1 ChartViewer = new Window1();
-            ChartViewer.Show();
+            //если что-то выбрано - рисуем
+            if (compName != "")
+            {
+                Window1 ChartViewer = new Window1();
+                ChartViewer.Show();
+            } else
+            //если ничего не выбрано то заставляем выбрать
+            {
+                MessageBoxResult result = System.Windows.MessageBox.Show("Вначале выберите строку с Суперкопьютером!",
+                                          "Выбор не сделан",
+                                          MessageBoxButton.OK,
+                                          MessageBoxImage.Information);
+            }
    
         }
 
