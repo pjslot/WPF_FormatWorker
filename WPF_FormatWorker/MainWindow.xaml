@@ -27,7 +27,7 @@ xmlns:wfcharting="clr-namespace:System.Windows.Forms.DataVisualization.Charting;
             <TextBlock TextWrapping="Wrap" Height="23" HorizontalAlignment="Center"><Run Language="ru-ru" Text="Количество строк для экспорта:"/></TextBlock>
             <Slider x:Name="slider" Width="176" Background="#FF9AAEFF" Maximum="500" Minimum="1" SmallChange="1" Value="500" ValueChanged="slider_ValueChanged" Height="30" TickPlacement="Both" InputScope="Number"/>
             <TextBlock x:Name="sliderText"   TextWrapping="Wrap" Text="{Binding ElementName=but1, Path=Uid}" Width="174" FontSize="20" Height="24" TextAlignment="Center" Margin="10,10,10,10" HorizontalAlignment="Center" Background="#FFE6FFEE" />
-            <Button Content="&lt;--  Откат таблицы  &lt;--" Height="26" Width="175" Margin="10,0,10,0" HorizontalAlignment="Center"/>
+            <Button x:Name="rollback" Content="&lt;--  Откат таблицы  &lt;--" Height="26" Width="175" Margin="10,0,10,0" HorizontalAlignment="Center" IsEnabled="False" Click="rollback_Click"/>
         </StackPanel>
         <DataGrid Grid.Column="1" x:Name="dataGrid" SelectionChanged="dataGrid_SelectionChanged" Grid.ColumnSpan="2">
 

@@ -20,7 +20,9 @@ namespace WPF_FormatWorker
         //публички для диаграммы
         public static int cores, power;
         public static string compName;
-        public static DataTable dtCompPublic;  
+        public static DataTable dtCompPublic;
+        //публичка для файла csv
+        public string pubFile;
 
         public MainWindow()
         {
@@ -54,6 +56,7 @@ namespace WPF_FormatWorker
             file = @"TOP500_202011.csv"; //убрать на релизе!
             if (file != "")
             {
+                pubFile = file;
             using (GenericParserAdapter parser = new GenericParserAdapter(file))
               {
                 // Разделитель CSV
@@ -66,6 +69,8 @@ namespace WPF_FormatWorker
                 dtCompPublic = dtComputers;
                 // выгрузка объекта таблицы в датагрид
                 dataGrid.ItemsSource = dtComputers.DefaultView;
+                    //активация кнопки отката
+                    rollback.IsEnabled = true;
                 }            
             }
         }
@@ -122,6 +127,7 @@ namespace WPF_FormatWorker
            // sliderText.Text = "111";
         }
 
+
         //КНОПКА ВЫГРУЗКИ В XML
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -148,6 +154,9 @@ namespace WPF_FormatWorker
                                          "Успешно!",
                                          MessageBoxButton.OK,
                                          MessageBoxImage.Information);
+                //глушим слайдер что б юзер не баловался
+                slider.IsEnabled = false;
+                slider.Opacity = 0.5;
             }
             else
             //если таблички нет то предлагаем подгрузить
@@ -159,8 +168,32 @@ namespace WPF_FormatWorker
             }
         }
 
+        //КНОПКА ОТКАТА ТАБЛИЦЫ
+        private void rollback_Click(object sender, RoutedEventArgs e)
+        {
+          //заново подгружаем полную табличку
+                using (GenericParserAdapter parser = new GenericParserAdapter(pubFile))
+                {
+                    // Разделитель CSV
+                    parser.ColumnDelimiter = ';';
+                    // Первая строка - заголовок
+                    parser.FirstRowHasHeader = true;
+                    // парсинг CSV в объект таблицы
+                    DataTable dtComputers = parser.GetDataTable();
+                    //выкидываем копию наружу что б другие могли работать
+                    dtCompPublic = dtComputers;
+                    // выгрузка объекта таблицы в датагрид
+                    dataGrid.ItemsSource = dtComputers.DefaultView;
+                    //активация кнопки отката
+                    rollback.IsEnabled = true;
+                }
+            //активируем слайдер
+            slider.IsEnabled = true;
+            slider.Opacity = 1;
+        }
+
+
     }
 }
 
 
-//СДЕЛАТЬ КНОПКУ ОТКАТА ОБРУБКА ТАБЛИЦЫ!

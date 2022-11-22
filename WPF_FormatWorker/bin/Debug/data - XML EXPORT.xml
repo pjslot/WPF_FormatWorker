@@ -39,4 +39,444 @@
     <Site_x0020_ID>50 831</Site_x0020_ID>
     <System_x0020_ID>179807</System_x0020_ID>
   </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>2</Rank>
+    <Previous_x0020_Rank>2</Previous_x0020_Rank>
+    <First_x0020_Appearance>51</First_x0020_Appearance>
+    <First_x0020_Rank>1</First_x0020_Rank>
+    <Name>Summit</Name>
+    <Computer>IBM Power System AC922, IBM POWER9 22C 3.07GHz, NVIDIA Volta GV100, Dual-rail Mellanox EDR Infiniband</Computer>
+    <Site>DOE/SC/Oak Ridge National Laboratory</Site>
+    <Manufacturer>IBM</Manufacturer>
+    <Country>United States</Country>
+    <Year>2018</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>2 414 592</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>2 211 840</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>148 600.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>200 794.88</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>16 473 600</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>2 925.75</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>10 096.00</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>14.72</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>IBM POWER9 22C 3.07GHz</Processor>
+    <Processor_x0020_Technology>Power</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>3 070</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>RHEL 7.4</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>NVIDIA Volta GV100</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>22</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>IBM POWER9</Processor_x0020_Generation>
+    <System_x0020_Model>IBM Power System AC922</System_x0020_Model>
+    <System_x0020_Family> IBM Power Systems</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>Dual-rail Mellanox EDR Infiniband</Interconnect>
+    <Continent>North America</Continent>
+    <Site_x0020_ID>48 553</Site_x0020_ID>
+    <System_x0020_ID>179397</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>3</Rank>
+    <Previous_x0020_Rank>3</Previous_x0020_Rank>
+    <First_x0020_Appearance>51</First_x0020_Appearance>
+    <First_x0020_Rank>3</First_x0020_Rank>
+    <Name>Sierra</Name>
+    <Computer>IBM Power System AC922, IBM POWER9 22C 3.1GHz, NVIDIA Volta GV100, Dual-rail Mellanox EDR Infiniband</Computer>
+    <Site>DOE/NNSA/LLNL</Site>
+    <Manufacturer>IBM / NVIDIA / Mellanox</Manufacturer>
+    <Country>United States</Country>
+    <Year>2018</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>1 572 480</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>1 382 400</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>94 640.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>125 712.00</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>11 902 464</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>1 795.67</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>7 438.28</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>12.72</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>IBM POWER9 22C 3.1GHz</Processor>
+    <Processor_x0020_Technology>Power</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>3 100</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Red Hat Enterprise Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>NVIDIA Volta GV100</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>22</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>IBM POWER9</Processor_x0020_Generation>
+    <System_x0020_Model>IBM Power System AC922</System_x0020_Model>
+    <System_x0020_Family> IBM Power Systems</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>Dual-rail Mellanox EDR Infiniband</Interconnect>
+    <Continent>North America</Continent>
+    <Site_x0020_ID>49 763</Site_x0020_ID>
+    <System_x0020_ID>179398</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>4</Rank>
+    <Previous_x0020_Rank>4</Previous_x0020_Rank>
+    <First_x0020_Appearance>47</First_x0020_Appearance>
+    <First_x0020_Rank>1</First_x0020_Rank>
+    <Name>Sunway TaihuLight</Name>
+    <Computer>Sunway MPP, Sunway SW26010 260C 1.45GHz, Sunway</Computer>
+    <Site>National Supercomputing Center in Wuxi</Site>
+    <Manufacturer>NRCPC</Manufacturer>
+    <Country>China</Country>
+    <Year>2016</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>10 649 600</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>93 014.59</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>125 435.90</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>12 288 000</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>480.85</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>15 371.00</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>6.05</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>MPP</Architecture>
+    <Processor>Sunway SW26010 260C 1.45GHz</Processor>
+    <Processor_x0020_Technology>ShenWei</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>1 450</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Sunway RaiseOS 2.0.5</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>260</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Sunway</Processor_x0020_Generation>
+    <System_x0020_Model>Sunway MPP</System_x0020_Model>
+    <System_x0020_Family>Sunway Cluster</System_x0020_Family>
+    <Interconnect_x0020_Family>Custom Interconnect</Interconnect_x0020_Family>
+    <Interconnect>Sunway</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>50 623</Site_x0020_ID>
+    <System_x0020_ID>178764</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>5</Rank>
+    <Previous_x0020_Rank>7</Previous_x0020_Rank>
+    <First_x0020_Appearance>55</First_x0020_Appearance>
+    <First_x0020_Rank>7</First_x0020_Rank>
+    <Name>Selene</Name>
+    <Computer>NVIDIA DGX A100, AMD EPYC 7742 64C 2.25GHz, NVIDIA A100, Mellanox HDR Infiniband</Computer>
+    <Site>NVIDIA Corporation</Site>
+    <Manufacturer>Nvidia</Manufacturer>
+    <Country>United States</Country>
+    <Year>2020</Year>
+    <Segment>Vendor</Segment>
+    <Total_x0020_Cores>555 520</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>483 840</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>63 460.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>79 215.00</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>6 598 656</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>1 622.51</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>2 646.00</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>23.98</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>AMD EPYC 7742 64C 2.25GHz</Processor>
+    <Processor_x0020_Technology>AMD Zen-2 (Rome)</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 250</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Ubuntu 20.04.1 LTS</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>NVIDIA A100</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>64</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>AMD Rome</Processor_x0020_Generation>
+    <System_x0020_Model>NVIDIA DGX A100</System_x0020_Model>
+    <System_x0020_Family>NVIDIA DGX</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>Mellanox HDR Infiniband</Interconnect>
+    <Continent>North America</Continent>
+    <Site_x0020_ID>48 448</Site_x0020_ID>
+    <System_x0020_ID>179842</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>6</Rank>
+    <Previous_x0020_Rank>5</Previous_x0020_Rank>
+    <First_x0020_Appearance>41</First_x0020_Appearance>
+    <First_x0020_Rank>1</First_x0020_Rank>
+    <Name>Tianhe-2A</Name>
+    <Computer>TH-IVB-FEP Cluster, Intel Xeon E5-2692v2 12C 2.2GHz, TH Express-2, Matrix-2000</Computer>
+    <Site>National Super Computer Center in Guangzhou</Site>
+    <Manufacturer>NUDT</Manufacturer>
+    <Country>China</Country>
+    <Year>2018</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>4 981 760</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>4 554 752</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>61 444.50</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>100 678.66</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>9 773 000</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_ />
+    <Power_x0020__x0028_kW_x0029_>18 482.00</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>3.32</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Intel Xeon E5-2692v2 12C 2.2GHz</Processor>
+    <Processor_x0020_Technology>Intel IvyBridge</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 200</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Kylin Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>Matrix-2000</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>12</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Intel Xeon E5 (IvyBridge)</Processor_x0020_Generation>
+    <System_x0020_Model>TH-IVB-FEP Cluster</System_x0020_Model>
+    <System_x0020_Family>TH-IVB Cluster</System_x0020_Family>
+    <Interconnect_x0020_Family>Custom Interconnect</Interconnect_x0020_Family>
+    <Interconnect>TH Express-2</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>50 365</Site_x0020_ID>
+    <System_x0020_ID>177999</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>7</Rank>
+    <Previous_x0020_Rank />
+    <First_x0020_Appearance>56</First_x0020_Appearance>
+    <First_x0020_Rank>7</First_x0020_Rank>
+    <Name>JUWELS Booster Module</Name>
+    <Computer>Bull Sequana XH2000 , AMD EPYC 7402 24C 2.8GHz, NVIDIA A100, Mellanox HDR InfiniBand/ParTec ParaStation ClusterSuite</Computer>
+    <Site>Forschungszentrum Juelich (FZJ)</Site>
+    <Manufacturer>Atos</Manufacturer>
+    <Country>Germany</Country>
+    <Year>2020</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>449 280</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>404 352</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>44 120.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>70 980.00</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>4 315 584</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>1 275.36</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>1 764.22</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>25.01</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>AMD EPYC 7402 24C 2.8GHz</Processor>
+    <Processor_x0020_Technology>AMD Zen-2 (Rome)</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 800</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>CentOS</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>NVIDIA A100</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>24</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>AMD Rome</Processor_x0020_Generation>
+    <System_x0020_Model>BullSequana XH2000</System_x0020_Model>
+    <System_x0020_Family>BullSequana</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>Mellanox HDR InfiniBand/ParTec ParaStation ClusterSuite</Interconnect>
+    <Continent>Europe</Continent>
+    <Site_x0020_ID>47 871</Site_x0020_ID>
+    <System_x0020_ID>179894</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>8</Rank>
+    <Previous_x0020_Rank>6</Previous_x0020_Rank>
+    <First_x0020_Appearance>55</First_x0020_Appearance>
+    <First_x0020_Rank>6</First_x0020_Rank>
+    <Name>HPC5</Name>
+    <Computer>PowerEdge C4140, Xeon Gold 6252 24C 2.1GHz, NVIDIA Tesla V100, Mellanox HDR Infiniband</Computer>
+    <Site>Eni S.p.A.</Site>
+    <Manufacturer>Dell EMC</Manufacturer>
+    <Country>Italy</Country>
+    <Year>2020</Year>
+    <Segment>Industry</Segment>
+    <Total_x0020_Cores>669 760</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>582 400</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>35 450.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>51 720.76</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>5 750 784</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>860.32</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>2 252.17</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>15.74</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Gold 6252 24C 2.1GHz</Processor>
+    <Processor_x0020_Technology>Intel Cascade lake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 100</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>CentOS Linux 7</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>NVIDIA Tesla V100</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>24</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Gold 62xx (Cascade Lake)</Processor_x0020_Generation>
+    <System_x0020_Model>PowerEdge C4140</System_x0020_Model>
+    <System_x0020_Family>Dell PowerEdge Cluster</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>Mellanox HDR Infiniband</Interconnect>
+    <Continent>Europe</Continent>
+    <Site_x0020_ID>50 489</Site_x0020_ID>
+    <System_x0020_ID>179856</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>9</Rank>
+    <Previous_x0020_Rank>8</Previous_x0020_Rank>
+    <First_x0020_Appearance>53</First_x0020_Appearance>
+    <First_x0020_Rank>5</First_x0020_Rank>
+    <Name>Frontera</Name>
+    <Computer>Dell C6420, Xeon Platinum 8280 28C 2.7GHz, Mellanox InfiniBand HDR</Computer>
+    <Site>Texas Advanced Computing Center/Univ. of Texas</Site>
+    <Manufacturer>Dell EMC</Manufacturer>
+    <Country>United States</Country>
+    <Year>2019</Year>
+    <Segment>Academic</Segment>
+    <Total_x0020_Cores>448 448</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>23 516.40</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>38 745.91</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>9 262 848</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_ />
+    <Power_x0020__x0028_kW_x0029_ />
+    <Power_x0020_Source />
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_ />
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Platinum 8280 28C 2.7GHz</Processor>
+    <Processor_x0020_Technology>Intel Cascade lake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 700</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>CentOS Linux 7</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>28</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Platinum 82xx (Cascade Lake)</Processor_x0020_Generation>
+    <System_x0020_Model>PowerEdge C6420</System_x0020_Model>
+    <System_x0020_Family>Dell PowerEdge Cluster</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>Mellanox InfiniBand HDR</Interconnect>
+    <Continent>North America</Continent>
+    <Site_x0020_ID>48 958</Site_x0020_ID>
+    <System_x0020_ID>179607</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>10</Rank>
+    <Previous_x0020_Rank />
+    <First_x0020_Appearance>56</First_x0020_Appearance>
+    <First_x0020_Rank>10</First_x0020_Rank>
+    <Name>Dammam-7</Name>
+    <Computer>Cray CS-Storm, Xeon Gold 6248 20C 2.5GHz, NVIDIA Tesla V100 SXM2, InfiniBand HDR 100</Computer>
+    <Site>Saudi Aramco</Site>
+    <Manufacturer>HPE</Manufacturer>
+    <Country>Saudi Arabia</Country>
+    <Year>2020</Year>
+    <Segment>Industry</Segment>
+    <Total_x0020_Cores>672 520</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>632 960</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>22 400.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>55 423.56</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>5 696 640</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>881.40</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_ />
+    <Power_x0020_Source />
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_ />
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Gold 6248 20C 2.5GHz</Processor>
+    <Processor_x0020_Technology>Intel Cascade lake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 500</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>RHEL 7.7</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>NVIDIA Tesla V100 SXM2</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>20</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Gold 62xx (Cascade Lake)</Processor_x0020_Generation>
+    <System_x0020_Model>Cray CS-Storm</System_x0020_Model>
+    <System_x0020_Family>Cray CS-Storm</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>InfiniBand HDR 100</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>48 751</Site_x0020_ID>
+    <System_x0020_ID>179885</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>11</Rank>
+    <Previous_x0020_Rank>9</Previous_x0020_Rank>
+    <First_x0020_Appearance>55</First_x0020_Appearance>
+    <First_x0020_Rank>9</First_x0020_Rank>
+    <Name>Marconi-100</Name>
+    <Computer>IBM Power System AC922, IBM POWER9 16C 3GHz, Nvidia Volta V100, Dual-rail Mellanox EDR Infiniband</Computer>
+    <Site>CINECA</Site>
+    <Manufacturer>IBM</Manufacturer>
+    <Country>Italy</Country>
+    <Year>2019</Year>
+    <Segment>Academic</Segment>
+    <Total_x0020_Cores>347 776</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>316 160</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>21 640.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>29 354.00</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>2 722 137</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>498.43</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>1 476.00</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>14.66</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>IBM POWER9 16C 3GHz</Processor>
+    <Processor_x0020_Technology>Power</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>3 000</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>RHEL 7.6</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>Nvidia Volta V100</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>16</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>IBM POWER9</Processor_x0020_Generation>
+    <System_x0020_Model>IBM Power System AC922</System_x0020_Model>
+    <System_x0020_Family> IBM Power Systems</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>Dual-rail Mellanox EDR Infiniband</Interconnect>
+    <Continent>Europe</Continent>
+    <Site_x0020_ID>47 495</Site_x0020_ID>
+    <System_x0020_ID>179845</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>12</Rank>
+    <Previous_x0020_Rank>10</Previous_x0020_Rank>
+    <First_x0020_Appearance>40</First_x0020_Appearance>
+    <First_x0020_Rank>114</First_x0020_Rank>
+    <Name>Piz Daint</Name>
+    <Computer>Cray XC50, Xeon E5-2690v3 12C 2.6GHz, Aries interconnect , NVIDIA Tesla P100</Computer>
+    <Site>Swiss National Supercomputing Centre (CSCS)</Site>
+    <Manufacturer>Cray/HPE</Manufacturer>
+    <Country>Switzerland</Country>
+    <Year>2017</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>387 872</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores>319 424</Accelerator_x002F_Co-Processor_x0020_Cores>
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>21 230.00</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>27 154.30</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>3 743 232</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_>496.98</HPCG_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Power_x0020__x0028_kW_x0029_>2 384.24</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>8.90</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>MPP</Architecture>
+    <Processor>Xeon E5-2690v3 12C 2.6GHz</Processor>
+    <Processor_x0020_Technology>Intel Haswell</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 600</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Cray Linux Environment </Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>NVIDIA Tesla P100</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>12</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Intel Xeon E5 (Haswell)</Processor_x0020_Generation>
+    <System_x0020_Model>Cray XC50</System_x0020_Model>
+    <System_x0020_Family>Cray XC</System_x0020_Family>
+    <Interconnect_x0020_Family>Custom Interconnect</Interconnect_x0020_Family>
+    <Interconnect>Aries interconnect </Interconnect>
+    <Continent>Europe</Continent>
+    <Site_x0020_ID>50 422</Site_x0020_ID>
+    <System_x0020_ID>177824</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
 </DocumentElement>
