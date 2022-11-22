@@ -8,6 +8,8 @@ using System.Windows.Forms.DataVisualization.Charting;
 using System.IO;
 using System.Windows.Controls;
 using System.Runtime.InteropServices;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace WPF_FormatWorker
 {
@@ -154,9 +156,54 @@ namespace WPF_FormatWorker
                                          "Успешно!",
                                          MessageBoxButton.OK,
                                          MessageBoxImage.Information);
-                //глушим слайдер что б юзер не баловался
+                //глушим слайдер 
+                if (slider.Value < 500)
+                {
+                    slider.IsEnabled = false;
+                    slider.Opacity = 0.5;
+                }
+            }
+            else
+            //если таблички нет то предлагаем подгрузить
+            {
+                MessageBoxResult result = System.Windows.MessageBox.Show("Вначале подгрузите CSV таблицу!",
+                                          "CSV Таблица не подгружена",
+                                          MessageBoxButton.OK,
+                                          MessageBoxImage.Information);
+            }
+        }
+
+        //КНОПКА ВЫГРУЗКИ В JSON
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //если табличка подгружена - выгружаем JSON
+            if (dtCompPublic != null)
+            {
+                //подрезка таблицы перед экспортом
+                int cutStart = (int)slider.Value;
+                int cutStop = dtCompPublic.Rows.Count;
+                int i = cutStart;
+                while (dtCompPublic.Rows.Count > cutStart)
+                {
+                    DataRow dr = dtCompPublic.Rows[i];
+                    dr.Delete();
+                }
+
+                //выгружаем в JSON
+                string jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(dtCompPublic.AsEnumerable(),Formatting.Indented);
+
+                    File.WriteAllText(@"data - JSON EXPORT.json", jsonString);
+
+                MessageBoxResult result = System.Windows.MessageBox.Show("Файл JSON экспортирован в корневую папку.",
+                                         "Успешно!",
+                                         MessageBoxButton.OK,
+                                         MessageBoxImage.Information);
+                //глушим слайдер 
+                if (slider.Value < 500)
+                { 
                 slider.IsEnabled = false;
                 slider.Opacity = 0.5;
+                }
             }
             else
             //если таблички нет то предлагаем подгрузить
