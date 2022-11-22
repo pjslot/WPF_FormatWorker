@@ -10,6 +10,8 @@ using System.Windows.Controls;
 using System.Runtime.InteropServices;
 using Newtonsoft.Json;
 using System.Text;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Linq;
 
 namespace WPF_FormatWorker
 {
@@ -190,7 +192,7 @@ namespace WPF_FormatWorker
                 }
 
                 //выгружаем в JSON
-                string jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(dtCompPublic.AsEnumerable(),Formatting.Indented);
+                string jsonString = JsonConvert.SerializeObject(dtCompPublic.AsEnumerable(),Formatting.Indented);
 
                     File.WriteAllText(@"data - JSON EXPORT.json", jsonString);
 
@@ -213,6 +215,94 @@ namespace WPF_FormatWorker
                                           MessageBoxButton.OK,
                                           MessageBoxImage.Information);
             }
+        }
+
+        //КНОПКА ЭКСПОРТА ЭКСЕЛЬ
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //// создаём/открываем сеанс приложения с Excel
+            //Excel.Application app = new Excel.Application();
+            //// делаем окно Excel видимым
+            //app.Visible = true;
+            //// добавляем новую книгу
+            //var wbk = app.Workbooks.Add();
+            //// получаем доступ к первому листу книги
+            //// нумерация от 1 (привет Visual Basic)
+            //Excel.Worksheet sht = wbk.Worksheets[1];
+            //// пишем в определенную ячейку
+            //sht.Cells[1, 1].Value = "HEllo Excel";
+
+
+
+
+            //var allCountry = (from super in dtCompPublic.AsEnumerable()
+            //                  group super by super["Country"] into g
+            //                  select new { Country = g.Key, Count = g.Count() }).ToList();
+            //string[] selectedCountries = new string[] { "Russia", "Japan", "China",  "United States", "Germany", "India"  };
+            //var selected = allCountry.Where(c =>
+            //selectedCountries.Contains(c.Country)).ToList();
+
+            //Excel.Application app = new Excel.Application();
+            //app.Visible = true;
+            //Excel.Workbook wbk = app.Workbooks.Add();
+            //Excel.Worksheet sht = wbk.Worksheets[1];
+            //sht.Name = "DataAndChart";
+            //sht.Cells[1, 1].Value = "Страна";
+            //sht.Cells[1, 2].Value = "Количество";
+            //for (int i = 0; i < selected.Count; i++)
+            //{
+            //    sht.Cells[i + 2, 1].Value = selected[i].Country;
+            //    sht.Cells[i + 2, 2].Value = selected[i].Count;
+            //}
+            //// Создаем гистограмму
+            //Excel.Chart ch = app.Charts.Add();
+            //ch.Location(Excel.XlChartLocation.xlLocationAsObject, "DataAndChart");
+            //Excel.ChartObject chObj = sht.ChartObjects(1);
+            //chObj.Chart.ChartTitle.Text = "Распределение суперкомпьютеров по странам";
+            //// Тип гистограммы: круговая
+            //chObj.Chart.ChartType = Excel.XlChartType.xlPie;
+
+
+
+
+            // load excel, and create a new workbook
+            var excelApp = new Excel.Application();
+            excelApp.Visible = true;
+            Excel.Workbook wbk = excelApp.Workbooks.Add();
+            
+
+            // single worksheet
+            Excel.Worksheet workSheet = wbk.Worksheets[1];
+            workSheet.Name = "Data Sheet";
+
+            // column headings
+            for (var i = 0; i < dtCompPublic.Columns.Count; i++)
+            {
+                workSheet.Cells[1, i + 1] = dtCompPublic.Columns[i].ColumnName;
+            }
+
+            // rows
+            for (var i = 0; i < dtCompPublic.Rows.Count-490; i++)
+            {
+                // to do: format datetime values before printing
+                for (var j = 0; j < dtCompPublic.Columns.Count; j++)
+                {
+                    workSheet.Cells[i + 2, j + 1] = dtCompPublic.Rows[i][j];
+                }
+            }
+
+            //====================
+
+            var allCountry = (from super in dtCompPublic.AsEnumerable()
+                              group super by super["Country"] into g
+                              select new { Country = g.Key, Count = g.Count() }).ToList();
+            string[] selectedCountries = new string[] { "Russia", "Japan", "China", "United States", "Germany", "India" };
+            var selected = allCountry.Where(c => selectedCountries.Contains(c.Country)).ToList();
+
+        
+
+
+
         }
 
         //КНОПКА ОТКАТА ТАБЛИЦЫ
