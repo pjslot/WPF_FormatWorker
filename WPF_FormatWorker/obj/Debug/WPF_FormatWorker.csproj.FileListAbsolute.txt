@@ -77,3 +77,7 @@ C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\obj\Debug\WPF_
 C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\obj\Debug\WPF_FormatWorker.exe
 C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\obj\Debug\WPF_FormatWorker.pdb
 C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\obj\Debug\WPF_FormatWorker.csproj.ResolveComReference.cache
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\SendGrid.dll
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\StarkbankEcdsa.dll
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\SendGrid.pdb
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\SendGrid.xml

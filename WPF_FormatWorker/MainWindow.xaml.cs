@@ -12,6 +12,21 @@ using Newtonsoft.Json;
 using System.Text;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Linq;
+using Microsoft.Office.Interop.Excel;
+using System;
+using System.Globalization;
+using System.Threading;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Collections.Generic;
+using System.Windows.Media;
+using System.Runtime.Remoting.Channels;
+using System.Web;
+using SendGrid;
+using System.Data.SqlClient;
+using System.Reflection;
+using System.Windows.Documents;
+using System.Xml.Linq;
+using Syncfusion.DocIO.DLS;
 
 namespace WPF_FormatWorker
 {
@@ -19,12 +34,12 @@ namespace WPF_FormatWorker
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : System.Windows.Window
     {
         //публички для диаграммы
         public static int cores, power;
         public static string compName;
-        public static DataTable dtCompPublic;
+        public static System.Data.DataTable dtCompPublic;
         //публичка для файла csv
         public string pubFile;
 
@@ -41,6 +56,9 @@ namespace WPF_FormatWorker
          //   sliderText.Text = slider.Value.ToString();
            
         }
+
+
+
 
         //КНОПКА ОТКРЫТЬ CSV
         private void Button_Click_LoadCSV(object sender, RoutedEventArgs e)
@@ -68,7 +86,7 @@ namespace WPF_FormatWorker
                 // Первая строка - заголовок
                 parser.FirstRowHasHeader = true;
                 // парсинг CSV в объект таблицы
-                DataTable dtComputers = parser.GetDataTable();
+                System.Data.DataTable dtComputers = parser.GetDataTable();
                 //выкидываем копию наружу что б другие могли работать
                 dtCompPublic = dtComputers;
                 // выгрузка объекта таблицы в датагрид
@@ -220,88 +238,74 @@ namespace WPF_FormatWorker
         //КНОПКА ЭКСПОРТА ЭКСЕЛЬ
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            //// создаём/открываем сеанс приложения с Excel
-            //Excel.Application app = new Excel.Application();
-            //// делаем окно Excel видимым
-            //app.Visible = true;
-            //// добавляем новую книгу
-            //var wbk = app.Workbooks.Add();
-            //// получаем доступ к первому листу книги
-            //// нумерация от 1 (привет Visual Basic)
-            //Excel.Worksheet sht = wbk.Worksheets[1];
-            //// пишем в определенную ячейку
-            //sht.Cells[1, 1].Value = "HEllo Excel";
 
-
-
-
-            //var allCountry = (from super in dtCompPublic.AsEnumerable()
-            //                  group super by super["Country"] into g
-            //                  select new { Country = g.Key, Count = g.Count() }).ToList();
-            //string[] selectedCountries = new string[] { "Russia", "Japan", "China",  "United States", "Germany", "India"  };
-            //var selected = allCountry.Where(c =>
-            //selectedCountries.Contains(c.Country)).ToList();
-
-            //Excel.Application app = new Excel.Application();
-            //app.Visible = true;
-            //Excel.Workbook wbk = app.Workbooks.Add();
-            //Excel.Worksheet sht = wbk.Worksheets[1];
-            //sht.Name = "DataAndChart";
-            //sht.Cells[1, 1].Value = "Страна";
-            //sht.Cells[1, 2].Value = "Количество";
-            //for (int i = 0; i < selected.Count; i++)
-            //{
-            //    sht.Cells[i + 2, 1].Value = selected[i].Country;
-            //    sht.Cells[i + 2, 2].Value = selected[i].Count;
-            //}
-            //// Создаем гистограмму
-            //Excel.Chart ch = app.Charts.Add();
-            //ch.Location(Excel.XlChartLocation.xlLocationAsObject, "DataAndChart");
-            //Excel.ChartObject chObj = sht.ChartObjects(1);
-            //chObj.Chart.ChartTitle.Text = "Распределение суперкомпьютеров по странам";
-            //// Тип гистограммы: круговая
-            //chObj.Chart.ChartType = Excel.XlChartType.xlPie;
-
-
-
-
-            // load excel, and create a new workbook
+            //загрузка экселя, создание новой книги
             var excelApp = new Excel.Application();
             excelApp.Visible = true;
             Excel.Workbook wbk = excelApp.Workbooks.Add();
-            
 
-            // single worksheet
+
+            // создание рабочего листа
             Excel.Worksheet workSheet = wbk.Worksheets[1];
-            workSheet.Name = "Data Sheet";
+            workSheet.Name = "Table";
 
-            // column headings
+            // заголовки столбцов таблицы
             for (var i = 0; i < dtCompPublic.Columns.Count; i++)
             {
                 workSheet.Cells[1, i + 1] = dtCompPublic.Columns[i].ColumnName;
             }
 
-            // rows
-            for (var i = 0; i < dtCompPublic.Rows.Count-490; i++)
+            // строки - обрезал до 20, очень медленный экспорт
+            for (var i = 0; i < dtCompPublic.Rows.Count - 480; i++)
             {
-                // to do: format datetime values before printing
+                //столбцы
                 for (var j = 0; j < dtCompPublic.Columns.Count; j++)
                 {
                     workSheet.Cells[i + 2, j + 1] = dtCompPublic.Rows[i][j];
                 }
             }
-
-            //====================
-
+           
+            //прогон по странам
             var allCountry = (from super in dtCompPublic.AsEnumerable()
                               group super by super["Country"] into g
                               select new { Country = g.Key, Count = g.Count() }).ToList();
             string[] selectedCountries = new string[] { "Russia", "Japan", "China", "United States", "Germany", "India" };
-            var selected = allCountry.Where(c => selectedCountries.Contains(c.Country)).ToList();
+            var selected = allCountry.Where(c =>
+            selectedCountries.Contains(c.Country)).ToList();
 
-        
+            //делаем лист под диаграмму
+            var sht2 = (Microsoft.Office.Interop.Excel.Worksheet)wbk.Worksheets.Add();
 
+            //выписка данных под диаграмму
+            sht2.Name = "Chart";
+            sht2.Cells[1, 1].Value = "Страна";
+            sht2.Cells[1, 2].Value = "Количество";
+            for (int i = 0; i < selected.Count; i++)
+            {
+                sht2.Cells[i + 2, 1].Value = selected[i].Country;
+                sht2.Cells[i + 2, 2].Value = selected[i].Count;
+            }
+            // Создаем гистограмму
+            Excel.Chart ch = excelApp.Charts.Add();
+            ch.Location(Excel.XlChartLocation.xlLocationAsObject, "Chart");
+            Excel.ChartObject chObj = sht2.ChartObjects(1);
+            chObj.Chart.ChartTitle.Text = "Распределение суперкомпьютеров по странам";
+            // Тип гистограммы: круговая
+            chObj.Chart.ChartType = Excel.XlChartType.xlPie;
 
+        }
+
+        //ЭКСПОРТ ВОРД
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+
+            //Create a table
+            //https://www.syncfusion.com/kb/288/how-to-convert-dategrid-to-word-document
+            WTable doctable = new WTable(doc);
+
+            doc.LastSection.Tables.Add(doctable);
+
+            DataTable table = (DataTable)this.dataGridView1.DataSource;
 
         }
 
@@ -316,7 +320,7 @@ namespace WPF_FormatWorker
                     // Первая строка - заголовок
                     parser.FirstRowHasHeader = true;
                     // парсинг CSV в объект таблицы
-                    DataTable dtComputers = parser.GetDataTable();
+                    System.Data.DataTable dtComputers = parser.GetDataTable();
                     //выкидываем копию наружу что б другие могли работать
                     dtCompPublic = dtComputers;
                     // выгрузка объекта таблицы в датагрид
@@ -331,6 +335,9 @@ namespace WPF_FormatWorker
 
 
     }
+
+
+
 }
 
 

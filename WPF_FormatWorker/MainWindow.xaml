@@ -23,7 +23,7 @@ xmlns:wfcharting="clr-namespace:System.Windows.Forms.DataVisualization.Charting;
             <Button Height="40" Margin="10,10,10,5" Click="Button_Click">Сохранить в XML</Button>
             <Button Height="40" Margin="10,10,10,5" Click="Button_Click_1">Сохранить в Json</Button>
             <Button Height="40" Margin="10,10,10,5" Click="Button_Click_2">Экспорт в Excel</Button>
-            <Button Height="40" Margin="10,10,10,5">Отчёт в Word</Button>
+            <Button Height="40" Margin="10,10,10,5" Click="Button_Click_3">Отчёт в Word</Button>
             <TextBlock TextWrapping="Wrap" Height="23" HorizontalAlignment="Center"><Run Language="ru-ru" Text="Количество строк для сохранения:"/></TextBlock>
             <Slider x:Name="slider" Width="176" Background="#FF9AAEFF" Maximum="500" Minimum="1" SmallChange="1" Value="500" ValueChanged="slider_ValueChanged" Height="30" TickPlacement="Both" InputScope="Number"/>
             <TextBlock x:Name="sliderText"   TextWrapping="Wrap" Text="{Binding ElementName=but1, Path=Uid}" Width="174" FontSize="20" Height="24" TextAlignment="Center" Margin="10,10,10,10" HorizontalAlignment="Center" Background="#FFE6FFEE" />
