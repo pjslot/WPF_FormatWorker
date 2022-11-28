@@ -19799,4 +19799,204 @@
     <Site_x0020_ID>50 722</Site_x0020_ID>
     <System_x0020_ID>179113</System_x0020_ID>
   </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>496</Rank>
+    <Previous_x0020_Rank>459</Previous_x0020_Rank>
+    <First_x0020_Appearance>52</First_x0020_Appearance>
+    <First_x0020_Rank>237</First_x0020_Rank>
+    <Name />
+    <Computer>HPE SGI 8600, Xeon Gold 6148 20C 2.4GHz, 4xEDR Infiniband</Computer>
+    <Site>Central Research Institute of Electric Power Industry/CRIEPI</Site>
+    <Manufacturer>HPE</Manufacturer>
+    <Country>Japan</Country>
+    <Year>2018</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>26 400</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>1 326.25</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>2 027.52</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>2 525 184</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_ />
+    <Power_x0020__x0028_kW_x0029_>357.55</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>3.71</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Gold 6148 20C 2.4GHz</Processor>
+    <Processor_x0020_Technology>Intel Skylake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 400</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Red Hat Enterprise Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>20</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Gold</Processor_x0020_Generation>
+    <System_x0020_Model>HPE SGI 8600</System_x0020_Model>
+    <System_x0020_Family>HPE SGI 8600</System_x0020_Family>
+    <Interconnect_x0020_Family>Infiniband</Interconnect_x0020_Family>
+    <Interconnect>4xEDR Infiniband</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>47 530</Site_x0020_ID>
+    <System_x0020_ID>179563</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>497</Rank>
+    <Previous_x0020_Rank>460</Previous_x0020_Rank>
+    <First_x0020_Appearance>50</First_x0020_Appearance>
+    <First_x0020_Rank>96</First_x0020_Rank>
+    <Name>Taiwania</Name>
+    <Computer>PRIMERGY CX2550 M4/CX2560 M4/CX2570 M4, Xeon Gold 6148 20C 2.4GHz, Intel Omni-Path</Computer>
+    <Site>National Center for High Performance Computing</Site>
+    <Manufacturer>Fujitsu</Manufacturer>
+    <Country>Taiwan</Country>
+    <Year>2017</Year>
+    <Segment>Research</Segment>
+    <Total_x0020_Cores>27 200</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>1 325.15</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>2 088.96</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>3 707 904</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_ />
+    <Power_x0020__x0028_kW_x0029_>332.00</Power_x0020__x0028_kW_x0029_>
+    <Power_x0020_Source>Submitted</Power_x0020_Source>
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>3.99</Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_>
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Gold 6148 20C 2.4GHz</Processor>
+    <Processor_x0020_Technology>Intel Skylake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 400</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>20</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Gold</Processor_x0020_Generation>
+    <System_x0020_Model>PRIMERGY CX2550 M4/CX2560 M4/CX2570 M4</System_x0020_Model>
+    <System_x0020_Family>Fujitsu PRIMERGY</System_x0020_Family>
+    <Interconnect_x0020_Family>Omnipath</Interconnect_x0020_Family>
+    <Interconnect>Intel Omni-Path</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>48 468</Site_x0020_ID>
+    <System_x0020_ID>179170</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>498</Rank>
+    <Previous_x0020_Rank>461</Previous_x0020_Rank>
+    <First_x0020_Appearance>51</First_x0020_Appearance>
+    <First_x0020_Rank>149</First_x0020_Rank>
+    <Name>Internet Company T EE2</Name>
+    <Computer>Lenovo HR650x, Xeon Gold 6133 20C 2.5GHz, 25G Ethernet</Computer>
+    <Site>Service Provider T</Site>
+    <Manufacturer>Lenovo</Manufacturer>
+    <Country>China</Country>
+    <Year>2018</Year>
+    <Segment>Industry</Segment>
+    <Total_x0020_Cores>30 000</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>1 319.52</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>2 400.00</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>3 794 688</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_ />
+    <Power_x0020__x0028_kW_x0029_ />
+    <Power_x0020_Source />
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_ />
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Gold 6133 20C 2.5GHz</Processor>
+    <Processor_x0020_Technology>Intel Skylake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 500</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>20</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Gold</Processor_x0020_Generation>
+    <System_x0020_Model>ThinkSystem HR650X</System_x0020_Model>
+    <System_x0020_Family>Lenovo ThinkSystem</System_x0020_Family>
+    <Interconnect_x0020_Family>Gigabit Ethernet</Interconnect_x0020_Family>
+    <Interconnect>25G Ethernet</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>50 329</Site_x0020_ID>
+    <System_x0020_ID>179352</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>499</Rank>
+    <Previous_x0020_Rank>462</Previous_x0020_Rank>
+    <First_x0020_Appearance>51</First_x0020_Appearance>
+    <First_x0020_Rank>150</First_x0020_Rank>
+    <Name>Internet Company T EE1</Name>
+    <Computer>Lenovo HR650x, Xeon Gold 6133 20C 2.5GHz, 25G Ethernet</Computer>
+    <Site>Service Provider T</Site>
+    <Manufacturer>Lenovo</Manufacturer>
+    <Country>China</Country>
+    <Year>2018</Year>
+    <Segment>Industry</Segment>
+    <Total_x0020_Cores>30 000</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>1 319.52</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>2 400.00</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>3 794 688</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_ />
+    <Power_x0020__x0028_kW_x0029_ />
+    <Power_x0020_Source />
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_ />
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Gold 6133 20C 2.5GHz</Processor>
+    <Processor_x0020_Technology>Intel Skylake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 500</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>20</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Gold</Processor_x0020_Generation>
+    <System_x0020_Model>ThinkSystem HR650X</System_x0020_Model>
+    <System_x0020_Family>Lenovo ThinkSystem</System_x0020_Family>
+    <Interconnect_x0020_Family>Gigabit Ethernet</Interconnect_x0020_Family>
+    <Interconnect>25G Ethernet</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>50 329</Site_x0020_ID>
+    <System_x0020_ID>179353</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
+  <Supercomputers_x0020_Top500>
+    <Rank>500</Rank>
+    <Previous_x0020_Rank>463</Previous_x0020_Rank>
+    <First_x0020_Appearance>51</First_x0020_Appearance>
+    <First_x0020_Rank>303</First_x0020_Rank>
+    <Name>Internet Company T FF1</Name>
+    <Computer>Lenovo HR650x, Xeon Gold 6133 20C 2.5GHz, 25G Ethernet</Computer>
+    <Site>Service Provider T</Site>
+    <Manufacturer>Lenovo</Manufacturer>
+    <Country>China</Country>
+    <Year>2018</Year>
+    <Segment>Industry</Segment>
+    <Total_x0020_Cores>29 920</Total_x0020_Cores>
+    <Accelerator_x002F_Co-Processor_x0020_Cores />
+    <Rmax_x0020__x005B_TFlop_x002F_s_x005D_>1 316.84</Rmax_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>2 393.60</Rpeak_x0020__x005B_TFlop_x002F_s_x005D_>
+    <Nmax>3 789 696</Nmax>
+    <Nhalf />
+    <HPCG_x0020__x005B_TFlop_x002F_s_x005D_ />
+    <Power_x0020__x0028_kW_x0029_ />
+    <Power_x0020_Source />
+    <Power_x0020_Efficiency_x0020__x005B_GFlops_x002F_Watts_x005D_ />
+    <Memory />
+    <Architecture>Cluster</Architecture>
+    <Processor>Xeon Gold 6133 20C 2.5GHz</Processor>
+    <Processor_x0020_Technology>Intel Skylake</Processor_x0020_Technology>
+    <Processor_x0020_Speed_x0020__x0028_MHz_x0029_>2 500</Processor_x0020_Speed_x0020__x0028_MHz_x0029_>
+    <Operating_x0020_System>Linux</Operating_x0020_System>
+    <OS_x0020_Family>Linux</OS_x0020_Family>
+    <Accelerator_x002F_Co-Processor>None</Accelerator_x002F_Co-Processor>
+    <Cores_x0020_per_x0020_Socket>20</Cores_x0020_per_x0020_Socket>
+    <Processor_x0020_Generation>Xeon Gold</Processor_x0020_Generation>
+    <System_x0020_Model>ThinkSystem HR650X</System_x0020_Model>
+    <System_x0020_Family>Lenovo ThinkSystem</System_x0020_Family>
+    <Interconnect_x0020_Family>Gigabit Ethernet</Interconnect_x0020_Family>
+    <Interconnect>25G Ethernet</Interconnect>
+    <Continent>Asia</Continent>
+    <Site_x0020_ID>50 329</Site_x0020_ID>
+    <System_x0020_ID>179351</System_x0020_ID>
+  </Supercomputers_x0020_Top500>
 </DocumentElement>

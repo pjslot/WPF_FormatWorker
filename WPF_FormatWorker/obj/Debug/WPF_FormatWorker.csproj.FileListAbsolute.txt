@@ -81,3 +81,10 @@ C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Send
 C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\StarkbankEcdsa.dll
 C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\SendGrid.pdb
 C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\SendGrid.xml
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Syncfusion.DocIO.Base.dll
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Syncfusion.OfficeChart.Base.dll
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Syncfusion.DocIO.Base.xml
+C:\Users\pjslo\Documents\GitHub\WPF_FormatWorker\WPF_FormatWorker\bin\Debug\Syncfusion.OfficeChart.Base.xml

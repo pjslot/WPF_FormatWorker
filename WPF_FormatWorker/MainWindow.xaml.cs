@@ -27,6 +27,8 @@ using System.Reflection;
 using System.Windows.Documents;
 using System.Xml.Linq;
 using Syncfusion.DocIO.DLS;
+using Word = Microsoft.Office.Interop.Word;
+
 
 namespace WPF_FormatWorker
 {
@@ -47,13 +49,12 @@ namespace WPF_FormatWorker
         {
             InitializeComponent();
             //симуляция нажатия кнопки - на время отладки
-            Button_Click_LoadCSV(but1, null);
-            //Button_Click_CountryDiag(but2, null);
-
+            //Button_Click_LoadCSV(but1, null);
+            
             cores = 0;
             power = 0;
             compName = "";
-         //   sliderText.Text = slider.Value.ToString();
+        
            
         }
 
@@ -72,7 +73,8 @@ namespace WPF_FormatWorker
 
 
             //вызов диалога открытия файла
-            //ЗАКРЫТО НА ОТЛАДКУ if (f.ShowDialog() == System.Windows.Forms.DialogResult.OK) file = f.FileName;
+            //ЗАКРЫТЬ НА ОТЛАДКУ
+            if (f.ShowDialog() == System.Windows.Forms.DialogResult.OK) file = f.FileName;
             
             //выгрузка данных на форму
             file = @"TOP500_202011.csv"; //убрать на релизе!
@@ -292,21 +294,62 @@ namespace WPF_FormatWorker
             chObj.Chart.ChartTitle.Text = "Распределение суперкомпьютеров по странам";
             // Тип гистограммы: круговая
             chObj.Chart.ChartType = Excel.XlChartType.xlPie;
-
         }
 
         //ЭКСПОРТ ВОРД
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
+            object oMissing = System.Reflection.Missing.Value;
+            Word._Application wApp = new Word.Application();
+            wApp.Visible = true;
+            Word.Document wDoc = wApp.Documents.Add(ref oMissing, ref oMissing, ref oMissing, ref oMissing); ;
+            Word.Table wTable;
 
-            //Create a table
-            //https://www.syncfusion.com/kb/288/how-to-convert-dategrid-to-word-document
-            WTable doctable = new WTable(doc);
+            //Добавляем параграф в конец документа
+            var Paragraph = wApp.ActiveDocument.Paragraphs.Add();
+            //Получаем диапазон
+            var tableRange = Paragraph.Range;
+            //альбомная ориентация
+            tableRange.PageSetup.Orientation = Word.WdOrientation.wdOrientLandscape;
+            //формат А3 что б влезло больше
+            tableRange.PageSetup.PaperSize = Word.WdPaperSize.wdPaperA3;
 
-            doc.LastSection.Tables.Add(doctable);
+            //Добавляем таблицу в указаный диапазон
+            wApp.ActiveDocument.Tables.Add(tableRange, 11, 38);
+            //раскрашиваем границы таблицы
+            var table = wApp.ActiveDocument.Tables[wApp.ActiveDocument.Tables.Count];
+            table.set_Style("Сетка таблицы");
+            table.ApplyStyleHeadingRows = true;
+            table.ApplyStyleLastRow = false;
+            table.ApplyStyleFirstColumn = true;
+            table.ApplyStyleLastColumn = false;
+            table.ApplyStyleRowBands = true;
+            table.ApplyStyleColumnBands = false;
 
-            DataTable table = (DataTable)this.dataGridView1.DataSource;
+            table.AllowAutoFit = true;
 
+            table.Columns.Width = 30;
+            table.Range.Font.Size = 8;
+
+            // заголовки столбцов таблицы
+            for (var i = 0; i < dtCompPublic.Columns.Count; i++)
+            {
+                wDoc.Tables[1].Cell(1,i+1).Range.Text = dtCompPublic.Columns[i].ColumnName;
+            }
+
+            table.Columns[1].PreferredWidth = 20;
+
+            // строки - обрезал до 10, очень медленный экспорт
+            for (var i = 0; i < dtCompPublic.Rows.Count - 490; i++)
+            {
+                //столбцы
+                for (var j = 0; j < dtCompPublic.Columns.Count; j++)
+                {
+                    wDoc.Tables[1].Cell(i+2, j + 1).Range.Text = (string)dtCompPublic.Rows[i][j];
+                }
+            }
+
+            //диаграмму не допилил! :(
         }
 
         //КНОПКА ОТКАТА ТАБЛИЦЫ
@@ -332,10 +375,7 @@ namespace WPF_FormatWorker
             slider.IsEnabled = true;
             slider.Opacity = 1;
         }
-
-
     }
-
 
 
 }
